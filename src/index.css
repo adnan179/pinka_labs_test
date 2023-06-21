@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.perspective {
+  perspective: 800px;
+}
+
+.cube {
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateX(-30deg) rotateY(45deg);
+  width: 170px;
+  height: 170px;
+}
+
+.front {
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  background-color: blue;
+  transform: translateZ(100px);
+}
+
+.left {
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  background-color: blue;
+  transform: rotateY(-90deg) translateZ(100px);
+}
+
+.top {
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  background-color: yellow;
+  transform: rotateX(90deg) translateZ(100px);
+}
